@@ -12,8 +12,12 @@ import { RegisterComponent } from './views/register/register.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
-    pathMatch: 'full',
+    component: LoginComponent,
+    data: {
+      title: 'Login Page'
+    }
+   //redirectTo: 'dashboard',
+   // pathMatch: 'full',
   },
   {
     path: '404',
